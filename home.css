@@ -221,7 +221,60 @@
 .technology-index{
     width: 100%;
     height: 500px;
-    border: 1px solid red;
+    background-image: url("https://wpdemo.archiwp.com/engitech/wp-content/uploads/sites/4/2020/02/bg-tech-home1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.technology-index-text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.technology-index-text-content h1{
+    color: var(--light-color);
+    text-align: center;
+    line-height: 30px;
+}
+.technology-index-text-content h5{
+    color: var(--light-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text-index-details-wapper{
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+.text-index-elements{
+    width: 180px;
+    height: 180px;
+    padding: 0 11px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.text-index-element-inner{
+    width: 90%;
+    height: 80%;
+    border: 1px solid var(--light-color);
+    transition: all 300ms linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+    color: var(--light-color);
+}
+.text-index-element-inner:hover{
+    background-color: var(--blue-colour);
+    cursor: pointer;
 }
 
 /*our clints*/
@@ -240,7 +293,6 @@
 .footer-logo-wapper{
     width: 100%;
     height: 100px;
-    border: 1px sollid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,13 +302,11 @@
 }
 .footer-context-wapper{
     width: 100%;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
 }
 .footer-contact-element{
     width: 300px;
-    border: 1px solid red;
     padding: 10px;
     display: flex;
     flex-direction:column;
@@ -282,9 +332,9 @@
 .footer-nav-wapper{
     width: 100%;
     padding: 10px;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
+    margin-top: 70px;
     
 }
 .footer-nav-wapper ul{
@@ -324,10 +374,10 @@
 .social-item{
     width: 35px;
     height: 50px;
-    border: 1px solid red;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+
 }
 .social{
     width: 30px;
@@ -337,6 +387,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 300ms linear;
+
+}
+.social-item:hover .social{
+    transform: translateY(-20px);
+    cursor: pointer;
 }
 
 /*media queries*/
